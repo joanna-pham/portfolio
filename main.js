@@ -61,13 +61,12 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  'Neo,',
-  'sooner or later',
-  'you\'re going to realize',
-  'just as I did',
-  'that there\'s a difference',
-  'between knowing the path',
-  'and walking the path'
+  'SELECT *',
+  'FROM World',
+  'WHERE "Someone"',
+  "LIKE '%ME%'",
+  '...',
+  '/> no results!'
 ]
 
 const el = document.querySelector('.hero-text')
