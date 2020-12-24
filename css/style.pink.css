@@ -474,9 +474,8 @@ CONTACT
   justify-content: center;
 }
 
-.btn-padding {
-  margin-left: 50px;
-  margin-right: 50px;
+.btn-margin {
+  margin: 50px;
 }
 
 button > a:hover {
@@ -1440,7 +1439,7 @@ a.list-group-item.active > .badge,
 
 @media only screen and (max-width: 600px) {
   .portfolio-box {
-    height: 300px;
+    height: 400px;
   }
   .col-portfolio {
     margin-left: 15px;
@@ -1449,5 +1448,14 @@ a.list-group-item.active > .badge,
   .margin-fix {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .banner-img {
+    width: 450px;
+  }
+  .hero-text {
+    font-size: 40px;
+  }
+  button {
+    width: 45%;
   }
 }
