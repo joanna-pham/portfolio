@@ -1437,6 +1437,12 @@ a.list-group-item.active > .badge,
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .portfolio-box {
+    height: 420px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .portfolio-box {
     height: 400px;
@@ -1453,9 +1459,16 @@ a.list-group-item.active > .badge,
     width: 450px;
   }
   .hero-text {
-    font-size: 40px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
   }
   button {
     width: 45%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .portfolio-box {
+    height: 420px;
   }
 }
