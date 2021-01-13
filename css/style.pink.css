@@ -156,6 +156,12 @@ h4.heading:after {
   font-family: 'Audiowide', cursive;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 
 /*
 
@@ -357,7 +363,7 @@ PROJECTS
 
 .portfolio-box {
   /* flex: 0 0 40%; */
-  height: 400px;
+  height: 450px;
   /* text-align:center; */
   border: 1px solid black;
   background-color: white;
@@ -392,6 +398,10 @@ PROJECTS
 .github-icon {
   float: right;
   font-size: 3rem;
+}
+
+.padding-right {
+  padding-right: 10px;
 }
 
 
@@ -1433,19 +1443,19 @@ a.list-group-item.active > .badge,
 
 @media (min-width: 991px) {
   .portfolio-box {
-    height: 400px;
+    height: 450px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .portfolio-box {
-    height: 420px;
+    height: 450px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .portfolio-box {
-    height: 400px;
+    height: 450px;
   }
   .col-portfolio {
     margin-left: 15px;
@@ -1469,6 +1479,6 @@ a.list-group-item.active > .badge,
 
 @media only screen and (max-width: 320px) {
   .portfolio-box {
-    height: 420px;
+    height: 450px;
   }
 }
