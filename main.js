@@ -61,7 +61,8 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  'Full Stack Web Developer',
+  'Software Engineer',
+  'UX Developer',
   'SELECT *',
   'FROM World',
   'WHERE "Someone"',
