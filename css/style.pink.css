@@ -26,6 +26,7 @@ section {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
+  line-height: 30px;
 }
 .section-gray {
   background: #f4f4f4;
@@ -301,7 +302,7 @@ INTRO
 html,
 body {
   font-family: 'Roboto Mono', monospace;
-  background: #212121;
+  /* background: #212121; */
   height: 100%;
 }
 .container {
@@ -392,9 +393,10 @@ PROJECTS
   /* flex: 0 0 40%; */
   height: 450px;
   /* text-align:center; */
-  border: 1px solid black;
+  border: 1px solid rgb(24, 24, 24);
   background-color: white;
   margin-top: 20px;
+  padding: 20px
 }
 
 .portfolio-heading{
@@ -669,6 +671,19 @@ CASE STUDY
 .margin-sides {
   margin-left: 100px;
   margin-right:100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-headers {
+  margin: 30px;
+}
+
+.margin-top-bottom {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /*
@@ -1152,9 +1167,11 @@ hr {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 6px 12px;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.42857143;
-  border-radius: 0;
+  border-radius: 5px;
+  background-color: #c28aab;
+  margin: 10px 20px;
 }
 .btn-primary {
   color: #c27baa;
@@ -1574,3 +1591,96 @@ a.list-group-item.active > .badge,
     height: 450px;
   }
 }
+
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+} */
+
+/* Center website */
+/* .main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+} */
+/*
+.row {
+  margin: 8px -16px;
+} */
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.portfolio-content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+/* .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+} */
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #A0A9B1;
+}
+
+.btn:focus {
+  background-color: #85b6ff;
+}
+
+/* Add a dark background color to the active button */
+/* .btn.active {
+  background-color: #666;
+   color: white;
+} */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* .portfolio-img {
+  max-width: 100%;
+  height: auto;
+} */

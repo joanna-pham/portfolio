@@ -89,9 +89,10 @@
       </div>
       <div class="col-md-6">
         <p>
-          I am a full stack web developer based in Southern California. My passion started in high school in a computer
+          I am a full stack developer and UX/UI designer based in Southern California. My passion started in high school
+          in a computer
           class and
-          it was recently reignited when the Covid-19 pandemic started to shut down schools and businesses. I was
+          it was recently reignited when Covid-19 pandemic started to shut down schools and businesses. I was
           working as an
           educator and when we moved to remote learning, I was inspired to help students, parents, and teachers feel
           comfortable
@@ -99,8 +100,12 @@
         </p>
         <p>
           I enrolled in a 14-week full immersion web development program and enjoyed every 800+ hours working on coding
+          projects. During my time in the coding program, I’ve developed an interest for building easy to use and
+          user-friendly websites and
+          applications. Then, I enrolled in the UI/UX program allowed me to build my design and research skills through
+          multiple
           projects.
-          I’m ecstatic for my journey into the programming world as I continue to learn every day!
+          I’m ecstatic for my journey into this field as I continue to learn every day!
         </p>
       </div>
     </div>
@@ -182,165 +187,205 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="heading">Portfolio</h2>
+
+          <div id="myBtnContainer" class="flex-center">
+            <h4>Filter:
+              <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn" onclick="filterSelection('full')"> Full Stack</button>
+              <button class="btn" onclick="filterSelection('front')"> Front-End</button>
+              <button class="btn" onclick="filterSelection('uiux')"> UI/UX Design</button>
+            </h4>
+          </div>
         </div>
-      </div>
-    </div>
 
-
-    <div class="row col-portfolio">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-box opacity-hover">
-          <figure class="image-container">
-            <a href="https://joanna-pham.github.io/eatch/" target="_blank">
-              <img src="img/ss-eatch.png" class="portfolio-img" />
-              <div class="overlay">
-                <div class="text">Live Demo</div>
+        <div class="row col-portfolio">
+          <div class="col-md-4 col-sm-6 column front">
+            <div class="portfolio-box opacity-hover">
+              <figure class="image-container">
+                <a href="https://joanna-pham.github.io/eatch/" target="_blank">
+                  <img src="img/ss-eatch.png" class="portfolio-img" />
+                  <div class="overlay">
+                    <div class="text">Live Demo</div>
+                  </div>
+                </a>
+              </figure>
+              <div class="portfolio-heading row">
+                <div class="col-md-9">
+                  <h4>Eatch</h4>
+                </div>
+                <div class="col-md-3 text-end">
+                  <a href="https://github.com/joanna-pham/eatch" target="_blank" class="hvr-icon-bounce">
+                    <i class="devicon-github-original github-icon hvr-icon"></i>
+                  </a>
+                </div>
               </div>
-            </a>
-          </figure>
-          <div class="portfolio-heading row">
-            <div class="col-md-9">
-              <h4>Eatch</h4>
-            </div>
-            <div class="col-md-3 text-end">
-              <a href="https://github.com/joanna-pham/eatch" target="_blank" class="hvr-icon-bounce">
-                <i class="devicon-github-original github-icon hvr-icon"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row portfolio-desc">
-            <div class="col-12">
-              <p>A front-end JavaScript application to generate random options
-                for a movie and restaurant for indecisive users. Best viewed on a mobile screen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-box opacity-hover">
-          <figure class="image-container">
-            <a href="https://gamers-unite.phamjo.com/" target="_blank">
-              <img src="img/ss-gamers-unite.png" class="portfolio-img" />
-              <div class="overlay">
-                <div class="text">Live Demo</div>
+              <div class="row portfolio-desc">
+                <div class="col-12">
+                  <p>A front-end JavaScript application to generate random options
+                    for a movie and restaurant for indecisive users. Best viewed on a mobile screen.</p>
+                </div>
               </div>
-            </a>
-          </figure>
-          <div class="portfolio-heading row">
-            <div class="col-md-9">
-              <h4>Gamers Unite</h4>
-            </div>
-            <div class="col-md-3 text-end">
-              <a href="https://github.com/joanna-pham/wicked-sales-js" target="_blank" class="hvr-icon-bounce">
-                <i class="devicon-github-original github-icon hvr-icon"></i>
-              </a>
             </div>
           </div>
-          <div class="row portfolio-desc">
-            <div class="col-12">
-              <p>An interactive full stack e-commerce shopping cart application built using Node.js and React.</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-box opacity-hover">
-          <figure class="image-container">
-            <a href="https://joanna-pham.github.io/memory-match/" target="_blank">
-              <img src="img/ss-memory-match.png" class="portfolio-img" />
-              <div class="overlay">
-                <div class="text">Live Demo</div>
+
+          <div class="col-md-4 col-sm-6 column full">
+            <div class="portfolio-box opacity-hover">
+              <figure class="image-container">
+                <a href="https://gamers-unite.phamjo.com/" target="_blank">
+                  <img src="img/ss-gamers-unite.png" class="portfolio-img" />
+                  <div class="overlay">
+                    <div class="text">Live Demo</div>
+                  </div>
+                </a>
+              </figure>
+              <div class="portfolio-heading row">
+                <div class="col-md-9">
+                  <h4>Gamers Unite</h4>
+                </div>
+                <div class="col-md-3 text-end">
+                  <a href="https://github.com/joanna-pham/wicked-sales-js" target="_blank" class="hvr-icon-bounce">
+                    <i class="devicon-github-original github-icon hvr-icon"></i>
+                  </a>
+                </div>
               </div>
-            </a>
-          </figure>
-          <div class="portfolio-heading row">
-            <div class="col-md-9">
-              <h4>Memory Match</h4>
-            </div>
-            <div class="col-md-3 text-end">
-              <a href="https://github.com/joanna-pham/memory-match" target="_blank" class="hvr-icon-bounce">
-                <i class="devicon-github-original github-icon hvr-icon"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row portfolio-desc">
-            <div class="col-12">
-              <p>A web application developed using HTML, CSS, JavaScript, and DOM Creation.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-box opacity-hover">
-          <figure class="image-container">
-            <!-- <a href="https://github.com/yanganboada/WMS" target="_blank"> -->
-            <img src="img/ss-wms.png" class="portfolio-img" />
-            <div class="overlay">
-              <div class="text" id="demo-disable">Demo Coming Soon</div>
-            </div>
-            <!-- </a> -->
-          </figure>
-          <div class="portfolio-heading row">
-            <div class="col-md-9">
-              <h4>WMS</h4>
-            </div>
-            <div class="col-md-3 text-end d-flex">
-
-              <a href="https://www.figma.com/file/wObbTV9umIAkLOZslDDfBR/WMS-Copy?node-id=0%3A1" target="_blank"
-                class="hvr-icon-bounce">
-                <i class="fab fa-figma fa-2x hvr-icon padding-right"></i>
-              </a>
-
-              <a href="https://github.com/joanna-pham/WMS" target="_blank" class="hvr-icon-bounce">
-                <i class="devicon-github-original github-icon hvr-icon"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row portfolio-desc">
-            <div class="col-12">
-              <p>A full stack web application for Warehouse Inventory Management System. Built using Node.js and
-                PostgreSQL.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-box opacity-hover">
-          <figure class="image-container">
-            <a href="https://www.figma.com/proto/wF4DfN7U9MNOOD6xBPY97D/UX1120%2FMain%2FJoanna-Pham?node-id=362%3A333&scaling=scale-down" target="_blank">
-              <img src="img/twn.jpg" class="portfolio-img" />
-              <div class="overlay">
-                <div class="text">Figma Demo</div>
+              <div class="row portfolio-desc">
+                <div class="col-12">
+                  <p>An interactive full stack e-commerce shopping cart application built using Node.js and React.</p>
+                </div>
               </div>
-            </a>
-          </figure>
-          <div class="portfolio-heading row">
-            <div class="col-md-9">
-              <h4>TWN</h4>
-            </div>
-            <div class="col-md-3 text-end">
-              <a href="https://www.figma.com/file/wF4DfN7U9MNOOD6xBPY97D/UX1120-Main-Joanna-Pham?node-id=930%3A1" target="_blank" class="hvr-icon-bounce">
-                <i class="fab fa-figma fa-2x hvr-icon"></i>
-              </a>
             </div>
           </div>
-          <div class="row portfolio-desc">
-            <div class="col-12">
-              <p>A human-centered digital product design for assisting teachers with virtual learning. Case study: <a href="/twn-case-study.html">LINK</a>
-              </p>
+
+          <div class="col-md-4 col-sm-6 column front">
+            <div class="portfolio-box opacity-hover">
+              <figure class="image-container">
+                <a href="https://joanna-pham.github.io/memory-match/" target="_blank">
+                  <img src="img/ss-memory-match.png" class="portfolio-img" />
+                  <div class="overlay">
+                    <div class="text">Live Demo</div>
+                  </div>
+                </a>
+              </figure>
+              <div class="portfolio-heading row">
+                <div class="col-md-9">
+                  <h4>Memory Match</h4>
+                </div>
+                <div class="col-md-3 text-end">
+                  <a href="https://github.com/joanna-pham/memory-match" target="_blank" class="hvr-icon-bounce">
+                    <i class="devicon-github-original github-icon hvr-icon"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row portfolio-desc">
+                <div class="col-12">
+                  <p>A web application developed using HTML, CSS, JavaScript, and DOM Creation.</p>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="col-md-4 col-sm-6 column full">
+            <div class="portfolio-box opacity-hover">
+              <figure class="image-container">
+                <!-- <a href="https://github.com/yanganboada/WMS" target="_blank"> -->
+                <img src="img/ss-wms.png" class="portfolio-img" />
+                <div class="overlay">
+                  <div class="text" id="demo-disable">Demo Coming Soon</div>
+                </div>
+                <!-- </a> -->
+              </figure>
+              <div class="portfolio-heading row">
+                <div class="col-md-9">
+                  <h4>WMS</h4>
+                </div>
+                <div class="col-md-3 text-end d-flex">
+
+                  <a href="https://www.figma.com/file/wObbTV9umIAkLOZslDDfBR/WMS-Copy?node-id=0%3A1" target="_blank"
+                    class="hvr-icon-bounce">
+                    <i class="fab fa-figma fa-2x hvr-icon padding-right"></i>
+                  </a>
+
+                  <a href="https://github.com/joanna-pham/WMS" target="_blank" class="hvr-icon-bounce">
+                    <i class="devicon-github-original github-icon hvr-icon"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row portfolio-desc">
+                <div class="col-12">
+                  <p>A full stack web application for Warehouse Inventory Management System. Built using Node.js and
+                    PostgreSQL.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 col-sm-6 column uiux">
+            <div class="portfolio-box opacity-hover">
+              <figure class="image-container">
+                <a href="https://www.figma.com/proto/wF4DfN7U9MNOOD6xBPY97D/UX1120%2FMain%2FJoanna-Pham?node-id=362%3A333&scaling=scale-down"
+                  target="_blank">
+                  <img src="img/twn.jpg" class="portfolio-img" />
+                  <div class="overlay">
+                    <div class="text">Figma Demo</div>
+                  </div>
+                </a>
+              </figure>
+              <div class="portfolio-heading row">
+                <div class="col-md-9">
+                  <h4>EdHub</h4>
+                </div>
+                <div class="col-md-3 text-end">
+                  <a href="https://www.figma.com/file/wF4DfN7U9MNOOD6xBPY97D/UX1120-Main-Joanna-Pham?node-id=930%3A1"
+                    target="_blank" class="hvr-icon-bounce">
+                    <i class="fab fa-figma fa-2x hvr-icon"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row portfolio-desc">
+                <div class="col-12">
+                  <p>A human-centered digital product design to assist teachers with virtual learning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 column uiux">
+            <div class="portfolio-box opacity-hover">
+              <figure class="image-container">
+                <a href="https://www.figma.com/proto/wF4DfN7U9MNOOD6xBPY97D/UX1120%2FMain%2FJoanna-Pham?node-id=362%3A333&scaling=scale-down"
+                  target="_blank">
+                  <img src="img/ss-reliance-bank.png" class="portfolio-img" />
+                  <div class="overlay">
+                    <div class="text">Figma Demo</div>
+                  </div>
+                </a>
+              </figure>
+              <div class="portfolio-heading row">
+                <div class="col-md-9">
+                  <h4>Reliance Bank</h4>
+                </div>
+                <div class="col-md-3 text-end">
+                  <a href="https://www.figma.com/file/wF4DfN7U9MNOOD6xBPY97D/UX1120-Main-Joanna-Pham?node-id=930%3A1" target="_blank"
+                    class="hvr-icon-bounce">
+                    <i class="fab fa-figma fa-2x hvr-icon"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row portfolio-desc">
+                <div class="col-12">
+                  <p>A native mobile banking app designed using iOS and material UI.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-
-
     </div>
 
   </section>
