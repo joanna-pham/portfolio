@@ -135,3 +135,12 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// ——————————————————————————————————————————————————
+// Modal
+// ——————————————————————————————————————————————————
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}

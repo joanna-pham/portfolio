@@ -170,8 +170,8 @@
       </div>
 
       <div class="col-md-12">
-        <img src="img/design-process-banner.jpg" class="img-responsive margin-bottom-30">
-        <img src="img/design-process-phases.jpg" class="img-responsive margin-top-30">
+        <img src="img/edhub/design-process-banner.jpg" class="img-responsive margin-bottom-30">
+        <img src="img/edhub/design-process-phases.jpg" class="img-responsive margin-top-30">
       </div>
 
 
@@ -203,7 +203,7 @@
             platform.</p>
         </div>
         <div class="col-md-12 padding-all">
-          <img src="img/chart01.jpg" class="img-responsive">
+          <img src="img/edhub/chart01.jpg" class="img-responsive">
         </div>
 
 
@@ -226,7 +226,8 @@
 
 
         <div class="col-md-12">
-          <img src="img/chart04.jpg" class="img-responsive margin-bottom-30" width="800px">
+          <img src="img/edhub/chart04.jpg" onclick="onClick(this)"
+            class="modal-hover-opacity img-responsive pointer margin-bottom-30" style="width:50%">
         </div>
 
         <div class="col-md-12">
@@ -237,16 +238,23 @@
           <p>I interviewed two teachers that taught different grade levels and used different teaching platforms. </p>
         </div>
         <div class="col-md-12">
-          <img src="img/users.jpg" class="img-responsive margin-bottom-30">
-            <img src="img/users.jpg" style="width:30%;cursor:zoom-in"
-              onclick="document.getElementById('modal01').style.display='block'">
-
-            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-              <div class="w3-modal-content w3-animate-zoom">
-                <img src="img/users.jpg" style="width:100%">
-              </div>
-            </div>
+          <img src="img/edhub/users.jpg" onclick="onClick(this)" class="modal-hover-opacity img-responsive pointer"
+            style="width:30%">
         </div>
+
+
+        <!---start modal--->
+
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <div class="modal-content">
+            <img id="img01" style="max-width:100%">
+          </div>
+        </div>
+
+        <!-- end modal-->
+
+
 
         <div class="col-md-12">
           <div class="col-md-12 center-flex">
@@ -262,7 +270,8 @@
           </p>
         </div>
         <div class="col-md-12">
-          <img src="img/competitive-analysis.jpg" class="img-responsive">
+          <img src="img/edhub/competitive-analysis.jpg" onclick="onClick(this)"
+            class="modal-hover-opacity img-responsive pointer" style="width:50%">
         </div>
 
 
@@ -280,7 +289,8 @@
           </p>
         </div>
         <div class="col-md-12">
-          <img src="img/empathy-map.jpg" class="img-responsive">
+          <img src="img/edhub/empathy-map.jpg" onclick="onClick(this)"
+            class="modal-hover-opacity img-responsive pointer" style="width:40%">
         </div>
 
         <div class="col-md-12">
@@ -288,7 +298,8 @@
             <i class="fas fa-square margin-right-30" style="color:#EF8354; margin-bottom:20px;"></i>
             <h3>User Persona</h3>
           </div>
-          <p>INFO INFO INFO
+          <p>Based on the information I gathered during my research, I created a user persona. They represented my prospective users
+          and helped me keep them in mind as I was working on my design.
           </p>
         </div>
 
@@ -297,7 +308,8 @@
             <i class="fas fa-square margin-right-30" style="color:#EF8354; margin-bottom:20px;"></i>
             <h3>User Journey</h3>
           </div>
-          <p>INFO INFO INFO
+          <p>This diagram demonstrates the user flow through a competitor's application. This scenario pinpoints her
+            emotional experience which allowed me to determine what features my application should include
           </p>
         </div>
 
@@ -306,73 +318,113 @@
 
   </section>
 
+
+  <!--DESIGN-->
+
+
   <section class="section-bg-dustyblue">
 
     <div class="row margin-fix">
       <div class="col-md-12 margin-bottom-30">
         <p style="line-height:15px;word-spacing:-40px;">
           <span class="header-overlap-number">
-            01<span class="header-overlap-title">OVERVIEW</span>
+            03<span class="header-overlap-title">DESIGN</span>
           </span>
         </p>
       </div>
     </div>
+
+
+    <div class="row margin-fix">
+      <div class="col-md-12 center-flex">
+        <i class="fas fa-square margin-right-30" style="color:#D8BFD8; margin-bottom:20px;"></i>
+        <h3>Storyboard</h3>
+      </div>
+      <div class="col-md-12">
+        <img src="img/edhub/storyboard.jpg" onclick="onClick(this)" class="modal-hover-opacity img-responsive pointer"
+          style="width:30%">
+      </div>
+    </div>
+
+
+    <div class="row margin-fix">
+      <div class="col-md-12 center-flex">
+        <i class="fas fa-square margin-right-30" style="color:#D8BFD8; margin-bottom:20px;"></i>
+        <h3>Impact/Effort Matrix</h3>
+      </div>
+      <div class="col-md-5">
+        <p>INFO INFO</p>
+      </div>
+      <div class="col-md-7">
+        <img src="img/edhub/impact-effort-matrix.jpg" onclick="onClick(this)"
+          class="modal-hover-opacity img-responsive pointer" style="width:50%">
+      </div>
+    </div>
+
+    <div class="row margin-fix">
+      <div class="col-md-12 center-flex">
+        <i class="fas fa-square margin-right-30" style="color:#D8BFD8; margin-bottom:20px;"></i>
+        <h3>Site Map</h3>
+      </div>
+
+      <div class="col-md-5">
+        <p>Site mapping helps improve website navigation, understanding the scope of work, and avoid missing critical
+          parts of a
+          website’s architecture. During this process, I was able to determine how many screens I may need for my
+          product.</p>
+      </div>
+      <div class="col-md-7">
+        <img src="img/edhub/site-map.jpg" onclick="onClick(this)" class="modal-hover-opacity img-responsive pointer"
+          style="width:50%">
+      </div>
+    </div>
+
+    <div class="row margin-fix">
+      <div class="col-md-12 center-flex">
+        <i class="fas fa-square margin-right-30" style="color:#D8BFD8; margin-bottom:20px;"></i>
+        <h3>User Flow</h3>
+      </div>
+      <div class="col-md-5">
+        <p>Creating a user flow helped form a route map and define all navigation steps in the user journey in order to
+          achieve their goal.
+          This user flow is based on assisting teachers find assignments that align with their lesson plans so they do
+          not have to recreate
+          assignments.
+        </p>
+      </div>
+      <div class="col-md-7">
+        <img src="img/edhub/user-flow.jpg" onclick="onClick(this)" class="modal-hover-opacity img-responsive pointer"
+          style="width:50%">
+      </div>
+    </div>
+
   </section>
 
-  <!-- tools-->
-  <section id="tools" class="section-blue">
-    <div class="container clearfix">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="heading">Tools</h2>
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="box box-skills">
-                <div class="icon"><i class="fab fa-figma"></i></div>
-                <h5 class="heading">Figma</h5>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="box box-skills">
-                <div class="icon"><i class="devicon-github-original"></i></div>
-                <h5 class="heading">GitHub</h5>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="box box-skills">
-                <div class="icon"><i class="devicon-npm-original-wordmark"></i></div>
-                <h5 class="heading">npm</h5>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="box box-skills">
-                <div class="icon"><i class="devicon-slack-plain"></i></div>
-                <h5 class="heading">Slack</h5>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="box box-skills">
-                <div class="icon"><i class="devicon-visualstudio-plain"></i></div>
-                <h5 class="heading">VS Code</h5>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="box box-skills">
-                <div class="icon"><i class="devicon-webpack-plain"></i></div>
-                <h5 class="heading">Webpack</h5>
-              </div>
-            </div>
+  <!-- REFINE -->
 
-          </div>
+  <section class="casestudy-white">
+
+    <div class="row margin-fix">
+      <div class="col-md-12">
+        <div class="margin-bottom-30" style="display:grid; justify-content: flex-end;">
+          <p style="line-height:15px;word-spacing:-40px;">
+            <span class="header-overlap-number">
+              04<span class="header-overlap-title">REFINE</span>
+            </span>
+          </p>
         </div>
       </div>
     </div>
+
+
   </section>
+
+
   <section id="contact" class="section-white">
     <div class="container clearfix">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="heading">Contact</h2>
+          <h2 class="heading">Thank you!</h2>
           <div class="row">
             <div class="col-md-12">
               <h4 class="center">Please reach me at any of the links provided below.</h4>
