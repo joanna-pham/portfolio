@@ -1806,6 +1806,11 @@ display:inline-block;
   cursor: pointer;
 }
 
+.img-border {
+  border: 10px solid rgb(107, 107, 107);
+  border-radius: 15px;
+}
+
 
 /* @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)}
