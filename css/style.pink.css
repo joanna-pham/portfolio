@@ -1821,3 +1821,7 @@ display:inline-block;
     from {transform:scale(0)}
     to {transform:scale(1)}
 } */
+
+.padding-sides {
+  padding: 0px 275px;
+}
