@@ -1733,11 +1733,11 @@ EDHUB CASE STUDY
 
 .center-box {
   margin: auto;
-  width: 40%;
+  width: 50%;
   border: 3px solid #4F5D75;
   background-color: #4F5D75;
   border-radius: 10px;
-  padding: 10px;
+  padding: 2% 10%;
   text-align: center;
 }
 
@@ -1803,7 +1803,7 @@ display:inline-block;
 }
 
 .pointer {
-  cursor: pointer;
+  cursor: zoom-in;
 }
 
 .img-border {
@@ -1824,4 +1824,12 @@ display:inline-block;
 
 .padding-sides {
   padding: 0px 275px;
+}
+
+.sides-padding {
+  padding: 0% 20%
+}
+
+.margin-top-75 {
+  margin-top: 75px;
 }
