@@ -65,8 +65,7 @@ const phrases = [
   'UX Developer',
   'SELECT *',
   'FROM World',
-  'WHERE "Someone"',
-  "LIKE '%ME%'",
+  " 'someone' LIKE '%ME%'",
   '...',
   '/> no results!'
 ]

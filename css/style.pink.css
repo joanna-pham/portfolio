@@ -395,8 +395,8 @@ PROJECTS
   /* text-align:center; */
   border: 1px solid rgb(24, 24, 24);
   background-color: white;
-  margin-top: 20px;
-  padding: 20px
+  padding: 5%;
+  margin: 3%
 }
 
 .portfolio-heading{
@@ -407,7 +407,7 @@ PROJECTS
 .portfolio-desc {
   padding-left: 40px;
   padding-right: 40px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .portfolio-icon {
@@ -1735,11 +1735,11 @@ EDHUB CASE STUDY
 
 .center-box {
   margin: auto;
-  width: 50%;
+  width: 60%;
   border: 3px solid #4F5D75;
   background-color: #4F5D75;
   border-radius: 10px;
-  padding: 2% 10%;
+  padding: 2% 5%;
   text-align: center;
 }
 
@@ -1824,13 +1824,14 @@ display:inline-block;
     to {transform:scale(1)}
 } */
 
-.padding-sides {
+/* .padding-sides {
   padding: 0px 275px;
-}
+} */
 
 .sides-padding {
   padding-left: 20%;
   padding-right: 20%;
+  margin: 0;
 }
 
 .margin-top-75 {
@@ -1844,4 +1845,38 @@ display:inline-block;
 
 .header-edhub {
   font-family: 'Merriweather', serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .sides-padding {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .header-overlap-title {
+  font-size: 30px;
+  color:#4F5D75;
+  font-weight: normal;
+  position: relative;
+  /* bottom: 25px; */
+  right: 25px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 5px;
+  }
+  .header-overlap-number {
+  font-size: 100px;
+  }
+  .margin-top-75 {
+    margin-top: 0;
+  }
+  .margin-bottom-30 {
+    margin-bottom: 10px;
+  }
+  .center-box {
+    width: 85%;
+  }
+}
+
+div.disabled {
+    overflow-x: hidden; //horizontal
+    overflow-y: scroll; //vertical
 }
