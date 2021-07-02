@@ -357,9 +357,10 @@ skills
   font-size: 11px;
 }
 
-.icon :hover {
+/* .icon :hover {
   color: #c28aab;
-}
+} */
+
 
 .icon-size {
   font-size: 15px;
