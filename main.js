@@ -62,7 +62,7 @@ class TextScramble {
 
 const phrases = [
   'Software Engineer',
-  'UX Developer',
+  'UI/UX Designer',
   'SELECT *',
   'FROM World',
   " 'someone' LIKE '%ME%'",

@@ -670,8 +670,7 @@ CASE STUDY
 */
 
 .margin-sides {
-  margin-left: 100px;
-  margin-right:100px;
+  margin: 0% 4%;
 }
 
 .text-center {
@@ -1880,4 +1879,15 @@ display:inline-block;
 div.disabled {
     overflow-x: hidden; //horizontal
     overflow-y: scroll; //vertical
+}
+
+.hline-bottom {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(204, 204, 204); /* whichever color you prefer */
+}
+
+.overview-section {
+  display: flex;
+  align-items: baseline;
+  margin: 0% 3%
 }
