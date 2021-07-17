@@ -1950,6 +1950,16 @@ div.disabled {
   margin: 0% 3%
 }
 
+@media (max-width: 500px) {
+  .overview-section {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 0% 3%
+}
+}
+
+
 /* Reliance */
 
 .blue-background {
