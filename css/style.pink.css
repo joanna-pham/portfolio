@@ -278,9 +278,9 @@ INTRO
   top: 0;
   width: 100%;
   height: 100%;
-  background: #c27baa;
-  opacity: 0.30;
-  filter: alpha(opacity=93);
+  background: #b692aa;
+  opacity: 0.60;
+  /* filter: alpha(opacity=93); */
   z-index: 2;
 }
 .intro a {
@@ -392,16 +392,23 @@ PROJECTS
 
 .portfolio-box {
   /* flex: 0 0 40%; */
-  height: 450px;
+  height: 470px;
   /* text-align:center; */
-  border: 1px solid rgb(24, 24, 24);
+  /* border: 1px solid rgb(58, 58, 58); */
   background-color: white;
   padding: 5%;
-  margin: 3%
+  margin: 3%;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.portfolio-p {
+  margin: 0% 3%;
 }
 
 .portfolio-heading{
-  padding: 30px;
+  /* padding: 1% 3%; */
+  margin-top: 2%;
   display: flex;
 }
 
@@ -1551,9 +1558,9 @@ a.list-group-item.active > .badge,
   margin-left: 3px;
 }
 
-@media (min-width: 991px) {
+@media (max-width: 991px) {
   .portfolio-box {
-    height: 450px;
+    height: 500px;
   }
 }
 
@@ -1771,6 +1778,57 @@ display: block;
   transform: translate(-50%, -50%);
 }
 
+/* ---- reset ---- */
+
+/* canvas {
+  display: block;
+  vertical-align: bottom;
+}  */
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: #b61924;
+  background-image: url("https://phamjo.com/img/hero.png"); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: 50% 50%; */
+} /* ---- stats.js ---- */
+/* .count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+} */
+
+
+
 
 .modal-hover-opacity {
 opacity:1;
@@ -1890,4 +1948,89 @@ div.disabled {
   display: flex;
   align-items: baseline;
   margin: 0% 3%
+}
+
+/* Reliance */
+
+.blue-background {
+  background-color: #C0D9FA;
+}
+
+.screen-margin-top {
+  margin-top: 15%;
+}
+
+.circle-text {
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.flex-space-around{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.square{
+  height: 100px;
+  width: 100px;
+}
+
+.font-biryani {
+  font-family: 'Biryani', sans-serif;
+}
+
+.rb-primary-btn {
+font-family: SF Pro Display;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #293241;
+width: 200px;
+height: 41px;
+background: #EE6C4D;
+border-radius: 8px;
+}
+
+.rb-secondary-btn {
+width: 200px;
+height: 41px;
+border: 3px solid #EE6C4D;
+box-sizing: border-box;
+border-radius: 8px;
+font-family: SF Pro Display;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #EE6C4D;
+}
+
+.rb-disable {
+width: 200px;
+height: 41px;
+
+background: #CECECE;
+border-radius: 8px;
+font-family: SF Pro Display;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #818181;
 }
