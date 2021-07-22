@@ -147,7 +147,7 @@ function onClick(element) {
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
-    color: { value: "#f1f7ed" },
+    color: { value: "#ffffff" },
     shape: {
       type: "circle",
       stroke: { width: 0, color: "#000000" },

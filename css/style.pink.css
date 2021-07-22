@@ -2044,3 +2044,14 @@ font-size: 16px;
 line-height: 19px;
 color: #818181;
 }
+
+/* HOME */
+
+.border-left {
+  border-left: .5rem solid #c27baa;
+  padding-left: 5%
+}
+
+.font-josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
