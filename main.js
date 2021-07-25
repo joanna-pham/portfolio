@@ -216,3 +216,12 @@ document.body.appendChild(stats.domElement);
 //   requestAnimationFrame(update);
 // };
 // requestAnimationFrame(update);
+
+function myFunction() {
+  var x = document.getElementById("navigation");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
