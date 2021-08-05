@@ -184,6 +184,10 @@ h4.heading:after {
   text-align: end;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .title-text {
   font-family: 'Audiowide', cursive;
 }
@@ -686,6 +690,89 @@ color: #c28aab;
   background-color: #a0a9b1;
   color: white;
   text-decoration: none;
+}
+
+/*
+
+=====================
+About Me
+=====================
+
+*/
+
+.text-style {
+  font-size: 1.3em;
+  line-height: 1.45;
+}
+
+/*
+
+=====================
+Coding
+=====================
+
+*/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;500;600;700&display=swap");
+body {
+  background-color: #f0f0f0;
+  font-family: "Quicksand", sans-serif;
+} */
+
+/* section {
+  display: flex;
+  justify-content: center;
+} */
+
+.card {
+  display: inline-block;
+  background-color: #ffffff;
+  margin: 20px 35px;
+  padding: 16px;
+  width: 450px;
+  height: 500px;
+  min-width: 288px;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+/* .card:hover {
+  box-shadow: none;
+} */
+/* .card:hover .card-image {
+  transform: translateX(0px);
+  box-shadow: none;
+} */
+
+.card-image {
+  width: 100%;
+  height: 256px;
+  border-radius: 8px;
+  position: relative;
+  /* transform: translateX(-32px); */
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 8px;
+}
+
+.card-title {
+  font-size: 32px;
+  margin: 12px 0;
+  transition: 0.4s;
+  /* font-family: "DM Serif Display", serif; */
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.card-content {
+  font-size: 1.2em;
+  margin-bottom: 8px;
 }
 
 /*
@@ -3320,5 +3407,11 @@ a.homer {
 }
 #coding-intro {
   height: 30%;
+}
+.about-btn {
+ flex-direction: column;
+}
+.card {
+  width: 340px;
 }
 }

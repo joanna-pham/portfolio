@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Heebo:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.pink.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -38,84 +38,6 @@
 
 
   <!-- navbar-->
-  <!-- <header class="header">
-    <div id="navigation" class="navbar-collapse">
-      <a href="./index.html"><img src="./img/logo.png" class="logo"></a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu mainmenu">
-        <li><a href="./about.html" class="header-text">About</a></li>
-        <li><a href="#portfolio" class="header-text" id="portfolioText">Portfolio</a></li>
-        <li><a href="#contact" class="header-text">Contact</a></li>
-      </ul>
-    </div>
-  </header> -->
-
-<!-- <header>
-  <div class="logo">
-    <h1>Logo</h1>
-    <a class="nav-btn">
-      <div class="btn-boder">
-        <span class="sp-btn"></span>
-        <span class="sp-btn"></span>
-        <span class="sp-btn"></span>
-      </div>
-    </a>
-  </div>
-  <nav>
-
-    <ul class="nav-menu">
-      <li class="item"><a href="#">Home</a></li>
-      <li class="item"><a href="#">About</a></li>
-      <li class="item"><a href="#">Gellary</a>
-        <ul>
-          <li class="subItem"><a href="#">dropdown</a></li>
-          <li class="subItem"><a href="#">dropdown</a></li>
-          <li class="subItem"><a href="#">dropdown</a></li>
-          <li class="subItem"><a href="#">dropdown</a></li>
-        </ul>
-      </li>
-      <li class="item"><a href="#">Others</a>
-        <ul class="subNav">
-          <li class="subItem"><a href="#">dropdown</a>
-            <ul class="subNav1">
-              <li class="subItem1"><a href="#"> dropdown</a></li>
-              <li class="subItem1"><a href="#"> dropdown</a></li>
-              <li class="subItem1"><a href="#"> dropdown</a></li>
-              <li class="subItem1"><a href="#"> dropdown</a></li>
-            </ul>
-          </li>
-          <li class="subItem"><a href="#">dropdown</a>
-            <ul class="subNav1">
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-            </ul>
-          </li>
-          <li class="subItem"><a href="#">dropdown</a>
-            <ul class="subNav1">
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-            </ul>
-          </li>
-          <li class="subItem"><a href="#">dropdown</a>
-            <ul class="subNav1">
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-              <li class="subItem1"><a href="#">dropdown</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li class="item"><a href="#">Contact</a>
-      </li>
-    </ul>
-  </nav>
-</header> -->
 
   <header>
     <div class="sticky-wrapper navbar-fixed-top">
@@ -227,38 +149,36 @@
 
   <!-- portfolio-->
   <section id="portfolio" class="section-white">
-    <div class="container">
+    <div class="container" style="flex-direction: column;">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col">
           <h2 class="heading">Portfolio</h2>
-
-          <div id="myBtnContainer" class="flex-center">
+          <!-- <div id="myBtnContainer" class="flex-center">
             <h4>Filter:
               <button class="btn active hvr-back-pulse" onclick="filterSelection('all')"> Show all</button>
               <button class="btn hvr-back-pulse" onclick="filterSelection('full')"> Full Stack</button>
               <button class="btn hvr-back-pulse" onclick="filterSelection('front')"> Front-End</button>
             </h4>
-          </div>
+          </div> -->
         </div>
+      </div>
 
 
-
-
-
-        <div class="row col-portfolio">
-          <div class="col-md-4 col-sm-6 column front">
-            <div class="portfolio-box opacity-hover">
-              <figure class="image-container">
-                <a href="https://joanna-pham.github.io/eatch/" target="_blank">
-                  <img src="img/ss-eatch.png" class="portfolio-img" />
-                  <div class="overlay">
-                    <div class="text">Live Demo</div>
-                  </div>
-                </a>
-              </figure>
-              <div class="portfolio-heading row">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <figure class="image-container">
+              <a href="https://joanna-pham.github.io/eatch/" target="_blank">
+                <img class="card-image" src="img/ss-eatch.png" />
+                <div class="overlay">
+                  <div class="text">Live Demo</div>
+                </div>
+              </a>
+            </figure>
+            <div class="card-body">
+              <div class="row" style="display: flex;">
                 <div class="col-md-9">
-                  <h4>Eatch</h4>
+                  <h3>EATCH</h3>
                 </div>
                 <div class="col-md-3 text-end">
                   <a href="https://github.com/joanna-pham/eatch" target="_blank" class="hvr-icon-bounce">
@@ -266,29 +186,27 @@
                   </a>
                 </div>
               </div>
-              <div class="row portfolio-desc">
-                <div class="col-12">
-                  <p class="portfolio-p">A front-end JavaScript application to generate random options
-                    for a movie and restaurant for indecisive users. Best viewed on a mobile screen.</p>
-                </div>
-              </div>
+              <p class="card-content" style="padding-left: 8px">A front-end JavaScript application to generate random
+                options for a movie and
+                restaurant for indecisive users. Best
+                viewed on a mobile screen.</p>
             </div>
           </div>
-
-
-          <div class="col-md-4 col-sm-6 column full">
-            <div class="portfolio-box opacity-hover">
-              <figure class="image-container">
-                <a href="https://gamers-unite.phamjo.com/" target="_blank">
-                  <img src="img/ss-gamers-unite.png" class="portfolio-img" />
-                  <div class="overlay">
-                    <div class="text">Live Demo</div>
-                  </div>
-                </a>
-              </figure>
-              <div class="portfolio-heading row">
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <figure class="image-container">
+              <a href="https://gamers-unite.phamjo.com/" target="_blank">
+                <img src="img/ss-gamers-unite.png" class="card-image" />
+                <div class="overlay">
+                  <div class="text">Live Demo</div>
+                </div>
+              </a>
+            </figure>
+            <div class="card-body">
+              <div class="row" style="display: flex;">
                 <div class="col-md-9">
-                  <h4>Gamers Unite</h4>
+                  <h3>Gamers Unite</h3>
                 </div>
                 <div class="col-md-3 text-end">
                   <a href="https://github.com/joanna-pham/wicked-sales-js" target="_blank" class="hvr-icon-bounce">
@@ -296,83 +214,201 @@
                   </a>
                 </div>
               </div>
-              <div class="row portfolio-desc">
-                <div class="col-12">
-                  <p class="portfolio-p">An interactive full stack e-commerce shopping cart application built using
-                    Node.js and React.</p>
-                </div>
-              </div>
+              <p class="card-content" style="padding-left: 8px">An interactive full stack e-commerce shopping cart
+                application built using Node.js
+                and React.</p>
             </div>
           </div>
-
-          <div class="col-md-4 col-sm-6 column front">
-            <div class="portfolio-box opacity-hover">
-              <figure class="image-container">
-                <a href="https://joanna-pham.github.io/memory-match/" target="_blank">
-                  <img src="img/ss-memory-match.png" class="portfolio-img" />
-                  <div class="overlay">
-                    <div class="text">Live Demo</div>
-                  </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <figure class="image-container">
+              <a href="https://joanna-pham.github.io/memory-match/" target="_blank">
+                <img src="img/ss-memory-match.png" class="card-image" />
+                <div class="overlay">
+                  <div class="text">Live Demo</div>
+                </div>
+              </a>
+            </figure>
+            <div class="card-body">
+              <div class="row" style="display: flex;">
+              <div class="col-md-9">
+                <h3>Memory Match</h3>
+              </div>
+              <div class="col-md-3 text-end">
+                <a href="https://joanna-pham.github.io/memory-match/" target="_blank" class="hvr-icon-bounce">
+                  <i class="devicon-github-original github-icon hvr-icon"></i>
                 </a>
-              </figure>
-              <div class="portfolio-heading row">
-                <div class="col-md-9">
-                  <h4>Memory Match</h4>
-                </div>
-                <div class="col-md-3 text-end">
-                  <a href="https://github.com/joanna-pham/memory-match" target="_blank" class="hvr-icon-bounce">
-                    <i class="devicon-github-original github-icon hvr-icon"></i>
-                  </a>
-                </div>
               </div>
-              <div class="row portfolio-desc">
-                <div class="col-12">
-                  <p class="portfolio-p">A web application developed using HTML, CSS, JavaScript, and DOM Creation.</p>
-                </div>
               </div>
+              <p class="card-content" style="padding-left: 8px">A web application developed using HTML, CSS, JavaScript,
+                and DOM Creation. Best
+                viewed on desktop.</p>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col-md-4 col-sm-6 column full">
-            <div class="portfolio-box opacity-hover">
-              <figure class="image-container">
-                <!-- <a href="https://github.com/yanganboada/WMS" target="_blank"> -->
-                <img src="img/ss-wms.png" class="portfolio-img" />
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <figure class="image-container">
+              <a href="https://github.com/yanganboada/WMS" target="_blank">
+                <img src="img/ss-wms.png" class="card-image" />
                 <div class="overlay">
                   <div class="text" id="demo-disable">Demo Coming Soon</div>
                 </div>
-                <!-- </a> -->
-              </figure>
-              <div class="portfolio-heading row">
-                <div class="col-md-9">
-                  <h4>WMS</h4>
-                </div>
-                <div class="col-md-3 text-end d-flex">
-
-                  <a href="https://www.figma.com/file/wObbTV9umIAkLOZslDDfBR/WMS-Copy?node-id=0%3A1" target="_blank"
-                    class="hvr-icon-bounce">
-                    <i class="fab fa-figma fa-2x hvr-icon padding-right"></i>
-                  </a>
-
-                  <a href="https://github.com/joanna-pham/WMS" target="_blank" class="hvr-icon-bounce">
-                    <i class="devicon-github-original github-icon hvr-icon"></i>
-                  </a>
-                </div>
+              </a>
+            </figure>
+            <div class="card-body">
+              <div class="row" style="display: flex;">
+              <div class="col-md-9">
+                <h3>WMS</h3>
               </div>
-              <div class="row portfolio-desc">
-                <div class="col-12">
-                  <p class="portfolio-p">A full stack web application for Warehouse Inventory Management System. Built
-                    using Node.js and
-                    PostgreSQL.
-                  </p>
-                </div>
+              <div class="col-md-3 text-end">
+                <a href="https://github.com/yanganboada/WMS" target="_blank" class="hvr-icon-bounce">
+                  <i class="devicon-github-original github-icon hvr-icon"></i>
+                </a>
               </div>
-            </div>
+              </div>
+            <p class="card-content" style="padding-left: 8px">A full stack web application for Warehouse Inventory
+              Management System. Built
+              using
+              Node.js and PostgreSQL.</p>
           </div>
-
         </div>
       </div>
     </div>
+
+    <!--
+      <div class="row col-portfolio">
+        <div class="col-md-4 col-sm-6 column front">
+          <div class="portfolio-box opacity-hover">
+            <figure class="image-container">
+              <a href="https://joanna-pham.github.io/eatch/" target="_blank">
+                <img src="img/ss-eatch.png" class="portfolio-img" />
+                <div class="overlay">
+                  <div class="text">Live Demo</div>
+                </div>
+              </a>
+            </figure>
+            <div class="portfolio-heading row">
+              <div class="col-md-9">
+                <h4>Eatch</h4>
+              </div>
+              <div class="col-md-3 text-end">
+                <a href="https://github.com/joanna-pham/eatch" target="_blank" class="hvr-icon-bounce">
+                  <i class="devicon-github-original github-icon hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row portfolio-desc">
+              <div class="col-12">
+                <p class="portfolio-p">A front-end JavaScript application to generate random options
+                  for a movie and restaurant for indecisive users. Best viewed on a mobile screen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 column full">
+          <div class="portfolio-box opacity-hover">
+            <figure class="image-container">
+              <a href="https://gamers-unite.phamjo.com/" target="_blank">
+                <img src="img/ss-gamers-unite.png" class="portfolio-img" />
+                <div class="overlay">
+                  <div class="text">Live Demo</div>
+                </div>
+              </a>
+            </figure>
+            <div class="portfolio-heading row">
+              <div class="col-md-9">
+                <h4>Gamers Unite</h4>
+              </div>
+              <div class="col-md-3 text-end">
+                <a href="https://github.com/joanna-pham/wicked-sales-js" target="_blank" class="hvr-icon-bounce">
+                  <i class="devicon-github-original github-icon hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row portfolio-desc">
+              <div class="col-12">
+                <p class="portfolio-p">An interactive full stack e-commerce shopping cart application built using
+                  Node.js and React.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 column front">
+          <div class="portfolio-box opacity-hover">
+            <figure class="image-container">
+              <a href="https://joanna-pham.github.io/memory-match/" target="_blank">
+                <img src="img/ss-memory-match.png" class="portfolio-img" />
+                <div class="overlay">
+                  <div class="text">Live Demo</div>
+                </div>
+              </a>
+            </figure>
+            <div class="portfolio-heading row">
+              <div class="col-md-9">
+                <h4>Memory Match</h4>
+              </div>
+              <div class="col-md-3 text-end">
+                <a href="https://github.com/joanna-pham/memory-match" target="_blank" class="hvr-icon-bounce">
+                  <i class="devicon-github-original github-icon hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row portfolio-desc">
+              <div class="col-12">
+                <p class="portfolio-p">A web application developed using HTML, CSS, JavaScript, and DOM Creation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 column full">
+          <div class="portfolio-box opacity-hover">
+            <figure class="image-container">
+              <a href="https://github.com/yanganboada/WMS" target="_blank">
+              <img src="img/ss-wms.png" class="portfolio-img" />
+              <div class="overlay">
+                <div class="text" id="demo-disable">Demo Coming Soon</div>
+              </div>
+              </a>
+            </figure>
+            <div class="portfolio-heading row">
+              <div class="col-md-9">
+                <h4>WMS</h4>
+              </div>
+              <div class="col-md-3 text-end d-flex">
+
+                <a href="https://www.figma.com/file/wObbTV9umIAkLOZslDDfBR/WMS-Copy?node-id=0%3A1" target="_blank"
+                  class="hvr-icon-bounce">
+                  <i class="fab fa-figma fa-2x hvr-icon padding-right"></i>
+                </a>
+
+                <a href="https://github.com/joanna-pham/WMS" target="_blank" class="hvr-icon-bounce">
+                  <i class="devicon-github-original github-icon hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row portfolio-desc">
+              <div class="col-12">
+                <p class="portfolio-p">A full stack web application for Warehouse Inventory Management System. Built
+                  using Node.js and
+                  PostgreSQL.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+    </div>
+    </div>
+
 
   </section>
 
