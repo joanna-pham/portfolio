@@ -217,70 +217,47 @@ function onClick(element) {
 // };
 // requestAnimationFrame(update);
 
-// function myFunction() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }
-
-// function headerPortfolio() {
-//   let portfolioText = document.getElementById("portfolioText")
-//   if (portfolioText)
-// }
-
-
-$(document).ready(function () {
-  const touch = $('#resp-menu');
-  const menu = $('.menu');
-
-  $(touch).on('click', function (e) {
-    e.preventDefault();
-    menu.slideToggle();
-  });
-
-  $(window).resize(function () {
-    var w = $(window).width();
-    if (w > 767 && menu.is(':hidden')) {
-      menu.removeAttr('style');
-    }
-  });
-
-});
 
 
 
-// $(function () {
-//   $(document).scroll(function () {
-//     var $nav = $(".navbar-fixed-top");
-//     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+// $(document).ready(function () {
+//   const touch = $('#resp-menu');
+//   const menu = $('.menu');
+
+//   $(touch).on('click', function (e) {
+//     e.preventDefault();
+//     menu.slideToggle();
 //   });
+
+//   $(window).resize(function () {
+//     var w = $(window).width();
+//     if (w > 767 && menu.is(':hidden')) {
+//       menu.removeAttr('style');
+//     }
+//   });
+
 // });
 
 
-// Changing the color of the fixed navbar when scrolled
-if ($(window).scrollTop() > 50) {
-  $('.navigation').addClass("change-color");
-  console.log('SCROLL TOP WORKS')
-}
-else {
-  $('.navigation').removeClass("change-color");
-}
-
-// Change written text to a list of <span> elements, each with one character
-var writtenText = document.getElementById('written-text')
-if (writtenText !== null) {
-  var writtenTextString = writtenText.innerText
-  writtenText.innerHTML = '' // Empty string
-  for (var i = 0; i < writtenTextString.length; i++) {
-    // Add a <span> with one character, but make it transparent
-    writtenText.innerHTML += '<span style="opacity: 0;">' + writtenTextString[i] + '</span>'
-  }
-
-  var interval = 25 // Pause between characters (in milliseconds). BEST SPEED IS 26
-  for (i = 0; i < writtenText.childElementCount; i++) {
-    setTimeout(changeOpacity, i * interval + 500, writtenText.children[i])
+// Responsive menu
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.className === "links") {
+    x.className += " responsive";
+  } else {
+    x.className = "links";
   }
 }
+
+// Transparent Scroll
+// $(document).ready(function () {
+//   $(window).scroll(function () { // check if scroll event happened
+//     if ($(document).scrollTop() > 850) { // check if user scrolled more than 50 from top of the browser window
+//       $(".navbar-color").css("background-color", "#ffffff"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+//       // .css("border-bottom-color", "#e6e6e6")
+//     } else {
+//       $(".navbar-color").css("background-color", "transparent"); // if not, change it back to transparent
+
+//     }
+//   });
+// });

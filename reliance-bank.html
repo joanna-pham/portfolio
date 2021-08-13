@@ -42,63 +42,25 @@
 
 <body data-spy="scroll" data-target="#navigation" data-offset="120">
 
-
-  <!-- intro-->
-  <!-- <section id="intro" class="intro image-background">
-    <div class="overlay"></div>
-    <div class="content">
-      <div class="clearfix">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-sm-12">
-            <div class=">
-              <div class="row">
-                <div class="col-md-12">
-                  <img src="img/name.png" class="banner-img">
-                </div>
-                <div class="col-md-12">
-                  <div class="hero-text"></div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div><a href="#about" class="icon faa-float animated scroll-to hvr-icon-down"><i
-        class="fa fa-angle-double-down hvr-icondown"></i></a>
-  </section> -->
   <!-- navbar-->
-  <header class="header">
-    <div class="sticky-wrapper">
-      <div role="navigation" class="navbar navbar-default d-flex navbar-collapse collapse">
-        <!-- <div class="container"> -->
-        <!-- <div class="navbar-header">
-          </div>
-          <div id="navigation" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav justify-content-center">
-              <li><a href="#overview">Overview </a></li>
-              <li><a href="#empathize">Empathize</a></li>
-              <li><a href="#design">Design</a></li>
-              <li><a href="#refine">Refine</a></li>
-              <li><a href="#retrospective">Retrospective</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div> -->
-        <!-- <div class="row"> -->
-        <div class="col-md-3">
-          <a href="./index.html"><img src="./img/avatar.png" class="logo-img" width="50px"></a>
-        </div>
-        <div class="col-md-9">
-          <a href="#contact" class="text-end">
-            <h4>CONTACT</h4>
-          </a>
-        </div>
-        <!-- </div> -->
-
-      </div>
+<header>
+  <div class="sticky-wrapper navbar-fixed-top navbar-color">
+    <div role="navigation" class="navbar">
+      <nav>
+        <a href="./index.html"><img src="img/logo-name.png" width="15%" class="logo-img" style="margin: 8px 0px"></a>
+        <ul class="links" id="myLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./ux-ui.html">UX/UI</a></li>
+          <li><a href="./coding.html">Coding</a></li>
+          <li class="icon">
+            <a href="#" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!-- </div> -->
-  </header>
+  </div>
+</header>
   <!-- /.navbar-->
   <!-- overview -->
   <section id="about" class="casestudy-white sides-padding">
@@ -116,6 +78,18 @@
       </div>
     </div>
 
+    <div class="row flex-space-between center">
+      <div class="col-md-4">
+        <p class="text-style"><span style="font-weight: bold;">Role: </span>UX/UI Designer</p>
+      </div>
+      <div class="col-md-4">
+        <p class="text-style"><span style="font-weight: bold;">Timeline: </span>2 weeks</p>
+      </div>
+      <div class="col-md-4">
+        <p class="text-style"><span style="font-weight: bold;">Tools: </span>Figma, Slack</p>
+      </div>
+    </div>
+
   </section>
 
   <section id="overview" class="blue-background">
@@ -129,13 +103,15 @@
 
       <div class="row">
         <div class="col-md-12">
-          <p>As our FinTech sector continues to grow at a fast pace, they are faced with new problems that have surfaced
+          <p class="text-style margin-bottom">As our FinTech sector continues to grow at a fast pace, they are faced
+            with new problems that have surfaced
             over recent years.
             As technology continues to grow, mobile customer support needs to be of higher quality. In
             addition, the mobile needs of
             the GenZ and Millennial generations are not being met.
           </p>
-          <p>The goal is to create a native mobile banking app that will meet the most common needs of this demographic
+          <p class="text-style">The goal is to create a native mobile banking app that will meet the most common needs
+            of this demographic
             and build
             on the functionality based on customer feedback and research in future releases. The banking app is created
             with two different
@@ -155,43 +131,43 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2 class="font-biryani">High Level Requirements</h2>
+          <h2 class="font-biryani margin-top">High Level Requirements</h2>
         </div>
       </div>
 
       <div class="row flex-space-around">
         <div class="col-md-2">
-          <h3 class="circle-text">1</h3>
-          <p>Customer can securely but easily log into the app</p>
+          <h3 class="circle-text margin-bottom">1</h3>
+          <p class="text-style">Customer can securely but easily log into the app</p>
         </div>
 
         <div class="col-md-2">
-          <h3 class="circle-text">2</h3>
-          <p>Customer can see all banking transactions and balances</p>
+          <h3 class="circle-text margin-bottom">2</h3>
+          <p class="text-style">Customer can see all banking transactions and balances</p>
         </div>
 
         <div class="col-md-2">
-          <h3 class="circle-text">3</h3>
-          <p>Customer can pay bills using the app
+          <h3 class="circle-text margin-bottom">3</h3>
+          <p class="text-style">Customer can pay bills using the app
           </p>
         </div>
 
         <div class="col-md-2">
-          <h3 class="circle-text">4</h3>
-          <p>Customers can deposit checks using the app
+          <h3 class="circle-text margin-bottom">4</h3>
+          <p class="text-style">Customers can deposit checks using the app
           </p>
         </div>
 
         <div class="col-md-2">
-          <h3 class="circle-text">5</h3>
-          <p>Customers can get notified of important actions on their account
+          <h3 class="circle-text margin-bottom">5</h3>
+          <p class="text-style">Customers can get notified of important actions on their account
           </p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12">
-          <h2 class="font-biryani">User Persona</h2>
+          <h2 class="font-biryani margin-top">User Persona</h2>
         </div>
       </div>
 
@@ -206,8 +182,6 @@
   <!-- research -->
   <section id="empathize" class="casestudy-white">
     <div class="clearfix sides-padding">
-
-
       <div class="row">
         <div class="col-md-12">
           <h2 class="font-biryani">App Flow</h2>
@@ -216,7 +190,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <p>It's important to start off analyzing and organizing all incoming information to
+          <p class="text-style">It's important to start off analyzing and organizing all incoming information to
             visualize content blocks and features.
           </p>
         </div>
@@ -231,13 +205,13 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2 class="font-biryani">Design System</h2>
+          <h2 class="font-biryani margin-top">Design System</h2>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-12">
-          <h4>Primary Colors</h4>
+          <h4 class="margin-top">Primary Colors</h4>
         </div>
       </div>
 
@@ -266,7 +240,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h4>Secondary Colors</h4>
+          <h4 class="margin-top">Secondary Colors</h4>
         </div>
       </div>
 
@@ -295,7 +269,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h4>Buttons</h4>
+          <h4 class="margin-top">Buttons</h4>
         </div>
       </div>
 
@@ -308,6 +282,44 @@
         </div>
         <div class="col-md-4">
           <button class="rb-disable">Disable Style</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="margin-top">Header</h4>
+        </div>
+      </div>
+
+      <div class="row flex-space-between center">
+        <div class="col-md-4">
+          <p class="text-style">iOS Header</p>
+          <img src="img/reliance-bank/ios-header-bg.png" onclick="onClick(this)" class="img-responsive pointer">
+        </div>
+        <div class="col-md-4">
+          <p class="text-style">iOS Subheader</p>
+          <img src="img/reliance-bank/ios-subheader.png" onclick="onClick(this)" class="img-responsive pointer">
+        </div>
+        <div class="col-md-4">
+          <p class="text-style">Material Header</p>
+          <img src="img/reliance-bank/material-header.png" onclick="onClick(this)" class="img-responsive pointer">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="margin-top">Bottom Navigation Bar</h4>
+        </div>
+      </div>
+
+      <div class="row flex-space-between center">
+        <div class="col-md-6">
+          <p class="text-style">Navbar</p>
+          <img src="img/reliance-bank/navbar.png" onclick="onClick(this)" class="img-responsive pointer">
+        </div>
+        <div class="col-md-6">
+          <p class="text-style">Navbar: Active State</p>
+          <img src="img/reliance-bank/navbar-active.png" onclick="onClick(this)" class="img-responsive pointer">
         </div>
       </div>
 

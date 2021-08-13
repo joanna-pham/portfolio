@@ -39,34 +39,29 @@
 
   <!-- navbar-->
 
-  <header>
-    <div class="sticky-wrapper navbar-fixed-top">
-      <div role="navigation" class="navbar navbar-default">
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
-          <div id="navigation" class="collapse navbar-collapse">
-            <ul class="menu nav navbar-nav ">
-              <li><a class="homer" href="#"><i class="fa fa-home"></i> HOME</a>
-              </li>
-              <li><a href="#"><i class="fa fa-user"></i> ABOUT</a></li>
-              <li><a href="#"><i class="fa fa-camera"></i> PORTFOLIO</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Coding</a></li>
-                  <li><a href="#">UX/UI</a></li>
-                </ul>
-              </li>
-              <li><a href="#"><i class="fa fa-envelope"></i> CONTACT</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+<header>
+  <div class="sticky-wrapper navbar-fixed-top navbar-color">
+    <div role="navigation" class="navbar">
+      <nav>
+        <a href="./index.html"><img src="img/logo-name.png" width="15%" class="logo-img" style="margin: 8px 0px"></a>
+        <ul class="links" id="myLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./ux-ui.html">UX/UI</a></li>
+          <li><a href="./coding.html">Coding</a></li>
+          <li class="icon">
+            <a href="#" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- /.navbar-->
 
   <!-- intro-->
-  <section id="coding-intro" class="section-white">
+  <section id="coding-intro" class="coding-banner">
     <div class="header-container">
       <div class="title" contenteditable>Coding</div>
       <div class="title lg" contenteditable>["hip", "hip"]</div>
@@ -279,137 +274,7 @@
         </div>
       </div>
     </div>
-
-    <!--
-      <div class="row col-portfolio">
-        <div class="col-md-4 col-sm-6 column front">
-          <div class="portfolio-box opacity-hover">
-            <figure class="image-container">
-              <a href="https://joanna-pham.github.io/eatch/" target="_blank">
-                <img src="img/ss-eatch.png" class="portfolio-img" />
-                <div class="overlay">
-                  <div class="text">Live Demo</div>
-                </div>
-              </a>
-            </figure>
-            <div class="portfolio-heading row">
-              <div class="col-md-9">
-                <h4>Eatch</h4>
-              </div>
-              <div class="col-md-3 text-end">
-                <a href="https://github.com/joanna-pham/eatch" target="_blank" class="hvr-icon-bounce">
-                  <i class="devicon-github-original github-icon hvr-icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row portfolio-desc">
-              <div class="col-12">
-                <p class="portfolio-p">A front-end JavaScript application to generate random options
-                  for a movie and restaurant for indecisive users. Best viewed on a mobile screen.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-4 col-sm-6 column full">
-          <div class="portfolio-box opacity-hover">
-            <figure class="image-container">
-              <a href="https://gamers-unite.phamjo.com/" target="_blank">
-                <img src="img/ss-gamers-unite.png" class="portfolio-img" />
-                <div class="overlay">
-                  <div class="text">Live Demo</div>
-                </div>
-              </a>
-            </figure>
-            <div class="portfolio-heading row">
-              <div class="col-md-9">
-                <h4>Gamers Unite</h4>
-              </div>
-              <div class="col-md-3 text-end">
-                <a href="https://github.com/joanna-pham/wicked-sales-js" target="_blank" class="hvr-icon-bounce">
-                  <i class="devicon-github-original github-icon hvr-icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row portfolio-desc">
-              <div class="col-12">
-                <p class="portfolio-p">An interactive full stack e-commerce shopping cart application built using
-                  Node.js and React.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 column front">
-          <div class="portfolio-box opacity-hover">
-            <figure class="image-container">
-              <a href="https://joanna-pham.github.io/memory-match/" target="_blank">
-                <img src="img/ss-memory-match.png" class="portfolio-img" />
-                <div class="overlay">
-                  <div class="text">Live Demo</div>
-                </div>
-              </a>
-            </figure>
-            <div class="portfolio-heading row">
-              <div class="col-md-9">
-                <h4>Memory Match</h4>
-              </div>
-              <div class="col-md-3 text-end">
-                <a href="https://github.com/joanna-pham/memory-match" target="_blank" class="hvr-icon-bounce">
-                  <i class="devicon-github-original github-icon hvr-icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row portfolio-desc">
-              <div class="col-12">
-                <p class="portfolio-p">A web application developed using HTML, CSS, JavaScript, and DOM Creation.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 column full">
-          <div class="portfolio-box opacity-hover">
-            <figure class="image-container">
-              <a href="https://github.com/yanganboada/WMS" target="_blank">
-              <img src="img/ss-wms.png" class="portfolio-img" />
-              <div class="overlay">
-                <div class="text" id="demo-disable">Demo Coming Soon</div>
-              </div>
-              </a>
-            </figure>
-            <div class="portfolio-heading row">
-              <div class="col-md-9">
-                <h4>WMS</h4>
-              </div>
-              <div class="col-md-3 text-end d-flex">
-
-                <a href="https://www.figma.com/file/wObbTV9umIAkLOZslDDfBR/WMS-Copy?node-id=0%3A1" target="_blank"
-                  class="hvr-icon-bounce">
-                  <i class="fab fa-figma fa-2x hvr-icon padding-right"></i>
-                </a>
-
-                <a href="https://github.com/joanna-pham/WMS" target="_blank" class="hvr-icon-bounce">
-                  <i class="devicon-github-original github-icon hvr-icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="row portfolio-desc">
-              <div class="col-12">
-                <p class="portfolio-p">A full stack web application for Warehouse Inventory Management System. Built
-                  using Node.js and
-                  PostgreSQL.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
     </div>
-    </div>
-
-
   </section>
 
 
@@ -463,54 +328,63 @@
       </div>
     </div>
   </section>
+
+
+
   <section id="contact" class="section-white">
     <div class="container clearfix">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="heading">Contact</h2>
-          <div class="row">
-            <div class="col-md-12">
-              <h4 class="center">Please reach me at any of the links provided below.</h4>
-              <a href="https://drive.google.com/file/d/1JMaU_rFG6-iZm2Dx8Y7hhfCApwvKTZsn/view?usp=sharing"
-                target="_blank" class="btn-resume hvr-back-pulse">Resume</a>
-            </div>
-          </div>
+          <h2 class="heading">Let's Connect</h2>
+        </div>
+      </div>
+    </div>
 
-          <div class="row">
-            <div class="col-sm-4 btn-flex">
-              <button class="button btn-margin">
-                <a href="https://www.linkedin.com/in/joanna-pham/" target="_blank">
-                  <i class="devicon-linkedin-plain icon-font"></i>
-                  <div class="button__horizontal"></div>
-                  <div class="button__vertical"></div>
-                </a>
-              </button>
-            </div>
-            <div class="col-sm-4 btn-flex">
-              <button class="button btn-margin">
-                <a href="https://github.com/joanna-pham" target="_blank">
-                  <i class="devicon-github-original icon-font"></i>
-                  <div class="button__horizontal"></div>
-                  <div class="button__vertical"></div>
-                </a>
-              </button>
-            </div>
-            <div class="col-sm-4 btn-flex">
-              <button class="button btn-margin">
-                <a href="mailto:jopham90@gmail.com" target="_blank">
-                  <i class="far fa-envelope icon-font"></i>
-                  <div class="button__horizontal"></div>
-                  <div class="button__vertical"></div>
-                </a>
-              </button>
-            </div>
-
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 btn-flex">
+          <button class="button btn-margin">
+            <a href="https://www.linkedin.com/in/joanna-pham/" target="_blank">
+              <i class="devicon-linkedin-plain icon-font"></i>
+              <p style="margin: 0">LinkedIn</p>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
+            </a>
+          </button>
+        </div>
+        <div class="col-md-3 btn-flex">
+          <button class="button btn-margin">
+            <a href="https://github.com/joanna-pham" target="_blank">
+              <i class="devicon-github-original icon-font"></i>
+              <p style="margin: 0">GitHub</p>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
+            </a>
+          </button>
+        </div>
+        <div class="col-md-3 btn-flex">
+          <button class="button btn-margin">
+            <a href="mailto:jopham90@gmail.com" target="_blank">
+              <i class="far fa-envelope icon-font"></i>
+              <p style="margin: 0">Email</p>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
+            </a>
+          </button>
+        </div>
+        <div class="col-md-3 btn-flex">
+          <button class="button btn-margin">
+            <a href="https://drive.google.com/file/d/1JMaU_rFG6-iZm2Dx8Y7hhfCApwvKTZsn/view?usp=sharing" target="_blank">
+              <i class="far fa-file-alt icon-font"></i>
+              <p style="margin: 0">Resume</p>
+              <div class="button__horizontal"></div>
+              <div class="button__vertical"></div>
+            </a>
+          </button>
         </div>
       </div>
 
     </div>
-
   </section>
   <!-- <footer>
     <div class="container">
@@ -526,7 +400,7 @@
     </div>
   </footer> -->
   <!-- Javascript files-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/jquery.scrollTo.min.js"></script>
