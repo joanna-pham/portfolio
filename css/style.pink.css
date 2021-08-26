@@ -24,8 +24,8 @@ header {
 }
 section {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   line-height: 30px;
 }
 .section-gray {
@@ -782,7 +782,7 @@ ux/ui
 ===================== */
 
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 main {
   padding: 0 64px 64px;
 }
@@ -794,9 +794,9 @@ main {
   max-width: 100%;
   min-height: 500px;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
+  overflow: hidden; */
   /* background-image: url(https://source.unsplash.com/collection/905011/1000x1000); */
-  background-size: contain;
+  /* background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -825,9 +825,9 @@ main {
 }
 
 .ux-card:hover .ux-info,
-.ux-card:hover .ux-info:before {
+.ux-card:hover .ux-info:before { */
   /* transform: translateY(0) translateZ(0); */
-  transform: translate(0px, 300px)
+  /* transform: translate(0px, 300px)
 }
 
 .ux-title {
@@ -847,99 +847,108 @@ main {
 
 .ux-link {
   color: #c27baa;
-}
-
-/*
-h1 {
-  margin-bottom: 0.5em;
-  font-weight: inherit;
-  line-height: 1.2;
-  color: #1c5b72;
-  font-size: 2.618em;
-}
-
-@media (min-width: 800px) {
-  h1 {
-    font-size: 4.236em;
-    font-weight: 300;
-  }
-}
-p {
-  margin-bottom: 1.3em;
-  line-height: 1.618;
-}
-
-@media (min-width: 800px) {
-  p {
-    font-size: 1.3em;
-  }
-}
-a {
-  color: #e03616;
-  text-decoration: none;
 } */
 
-/*
-#home {
-  clip-path: url(#cache);
+
+.ux-wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
 }
 
-#red {
-  fill: none;
-  opacity: 0.15;
-  stroke: #CE1B5F;
-  stroke-width: 12;
-  stroke-miterlimit:10;
-  animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+.ux-card {
+  width: 500px;
+  height: 400px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  margin: 50px 30px;
 }
-
-#blue {
-  fill: none;
-  opacity: 0.15;
-  stroke: #06A1C4;
-  stroke-width: 12;
-  stroke-miterlimit:10;
-  animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+.ux-card:hover {
+  transform: translateY(20px);
 }
-
-#light-blue {
-  fill: none;
-  opacity: 0.15;
-  stroke: #06A1C4;
-  stroke-width: 6;
-  stroke-miterlimit:10;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 800;
-  animation: draw 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+.ux-card:hover:before {
+  opacity: 1;
 }
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
- }
-    }
-
-@keyframes show {
-  0% {
-    opacity: 0.15;
- }
-  50% {
-    opacity: 0.2;
- }
-  100% {
-    opacity: 0.15;
- }
-    }
- */
+.ux-card:hover .ux-info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.ux-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(250, 250, 250, 0.986);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.ux-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.ux-card .ux-info {
+  position: relative;
+  z-index: 3;
+  color: #6E6E6E;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.ux-card .ux-info h1 {
+  margin: 0px 10px;
+}
+.ux-card .ux-info .ux-p {
+  letter-spacing: 1px;
+  /* font-size: 15px; */
+  margin: 15px 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.ux-card .ux-info .ux-button {
+  /* padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #c28aab;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease; */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c28aab;
+  cursor: pointer;
+  width: 190px;
+  height: 50px;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+.ux-card .ux-info .ux-button:hover {
+  background: #a0a9b1;
+  color: white;
+}
 
 
 
@@ -2014,7 +2023,7 @@ EDHUB CASE STUDY
 }
 
 .margin-top-30 {
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .center-box {
@@ -2298,7 +2307,6 @@ color: #EE6C4D;
 .rb-disable {
 width: 200px;
 height: 41px;
-
 background: #CECECE;
 border-radius: 8px;
 font-family: SF Pro Display;
@@ -2308,6 +2316,11 @@ font-size: 16px;
 line-height: 19px;
 color: #818181;
 }
+
+.margin-info {
+  margin: 200px auto;
+}
+
 
 /* HOME */
 
@@ -3489,6 +3502,7 @@ ul.links li a {
    font-weight: bold;
    font-family: 'Josefin Sans', sans-serif;
    letter-spacing: 1px;
+   background-color: #D7D7CA;
 }
 
 ul.links li a:hover {
@@ -3709,4 +3723,27 @@ ul.links li.icon {display: none;}
 .card {
   width: 340px;
 }
+
+.ux-img {
+  /* -o-object-fit: fill; */
+     object-fit: fill;
 }
+
+.ux-card {
+  width: 360px;
+}
+.flex-space-around {
+  display:block;
+}
+.flex-space-between {
+  display: block
+}
+.margin-info {
+  margin: 0 auto;
+}
+
+}
+
+
+
+/* --------------------------- */
