@@ -2003,8 +2003,8 @@ EDHUB CASE STUDY
 }
 
 .square {
-  width: 20px;
-  height: 20px;
+  width: 100px;
+  height: 100px;
   background-color: #000000;
   border-radius: 5px;
 }
@@ -2272,10 +2272,10 @@ div.disabled {
   justify-content: space-between;
 }
 
-.square{
+/* .square{
   height: 100px;
   width: 100px;
-}
+} */
 
 .rb-primary-btn {
 font-family: SF Pro Display;
@@ -2288,6 +2288,7 @@ width: 200px;
 height: 41px;
 background: #EE6C4D;
 border-radius: 8px;
+margin: 10px;
 }
 
 .rb-secondary-btn {
@@ -2302,6 +2303,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 19px;
 color: #EE6C4D;
+margin: 10px;
 }
 
 .rb-disable {
@@ -2315,10 +2317,15 @@ font-weight: normal;
 font-size: 16px;
 line-height: 19px;
 color: #818181;
+margin: 10px;
 }
 
 .margin-info {
   margin: 200px auto;
+}
+
+.img-margin-top {
+  margin: 90px 0px;
 }
 
 
@@ -3736,10 +3743,18 @@ ul.links li.icon {display: none;}
   display:block;
 }
 .flex-space-between {
-  display: block
+  flex-direction: column;
+  align-items: center;
 }
 .margin-info {
   margin: 0 auto;
+}
+.img-margin-top{
+  margin: 0 auto
+}
+.square {
+  width: 150px;
+  height: 50px;
 }
 
 }
