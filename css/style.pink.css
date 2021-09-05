@@ -782,74 +782,6 @@ ux/ui
 ===================== */
 
 
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
-main {
-  padding: 0 64px 64px;
-}
-
-.ux-card {
-  border-radius: 16px;
-  margin: 0 auto;
-  width: 500px;
-  max-width: 100%;
-  min-height: 500px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
-  overflow: hidden; */
-  /* background-image: url(https://source.unsplash.com/collection/905011/1000x1000); */
-  /* background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.ux-info {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-color: #fff;
-  transform: translateY(100%) translateY(-88px) translateZ(0);
-  transition: transform 0.5s ease-out;
-}
-
-.ux-info:before {
-  z-index: -1;
-  display: block;
-  position: absolute;
-  content: " ";
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  filter: blur(10px);
-  background-size: cover;
-  opacity: 0.25;
-  transform: translateY(-100%) translateY(88px) translateZ(0);
-  transition: transform 0.5s ease-out;
-}
-
-.ux-card:hover .ux-info,
-.ux-card:hover .ux-info:before { */
-  /* transform: translateY(0) translateZ(0); */
-  /* transform: translate(0px, 300px)
-}
-
-.ux-title {
-  margin: 0;
-  padding: 24px;
-  font-size: 40px;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.ux-description {
-  margin: 0;
-  padding: 0 20px 20px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.ux-link {
-  color: #c27baa;
-} */
-
-
 .ux-wrapper {
   display: flex;
   width: 90%;
@@ -857,8 +789,8 @@ main {
 }
 
 .ux-card {
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
   border-radius: 15px;
   padding: 1.5rem;
   background: white;
@@ -1875,9 +1807,9 @@ a.list-group-item.active > .badge,
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
   }
-  button {
+  /* button {
     width: 45%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 320px) {
@@ -3277,201 +3209,6 @@ body {
 
 }
 
-/*
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,800);
-
-*,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td {
-    margin: 0;
-    padding: 0;
-}
-
-article,aside,figure,footer,header,hgroup,nav,section {
-    display: block;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html {
-    -webkit-font-smoothing: antialiased;
-}
-
-body {
-    background: #e5e5e5;
-    font: 14px "Open Sans",Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1;
-    width: 100%;
-} */
-
-/* nav {
-    display: block;
-    background: transparent
-} */
-
-/* .affix.navbar{
- background-color: #001B2E;
- }
-
-.solid {
-  background: rgb(224, 224, 224)
-}
-
-.menu {
-    display: block;
-}
-
-.menu li {
-    display: inline-block;
-    position: relative;
-    z-index: 100;
-}
-
-.menu li:first-child {
-    margin-left: 0;
-}
-
-.menu li a {
-    font-weight: 600;
-    text-decoration: none;
-    padding: 20px 15px;
-    display: block;
-    color: #fff;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-.menu li a:hover,.menu li:hover>a {
-    color: #fff;
-    background: rgb(194, 138, 171);
-}
-
-.menu ul {
-    visibility: hidden;
-    opacity: 0;
-    margin: 0;
-    padding: 0;
-    width: 170px;
-    position: absolute;
-    left: 0px;
-    background: #fff;
-    z-index: 99;
-    transform: translate(0,20px);
-    transition: all 0.2s ease-out;
-}
-
-.menu ul:after {
-    bottom: 100%;
-    left: 20%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #fff;
-    border-width: 6px;
-    margin-left: -6px;
-}
-
-.menu ul li {
-    display: block;
-    float: none;
-    background: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu ul li a {
-    font-size: 12px;
-    font-weight: normal;
-    display: block;
-    color: #797979;
-}
-
-.menu ul li a:hover,.menu ul li:hover>a {
-    background: rgb(194, 138, 171);
-    color: #fff;
-}
-
-.menu li:hover>ul {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(0,0);
-}
-
-.menu ul ul {
-    left: 169px;
-    top: 0px;
-    visibility: hidden;
-    opacity: 0;
-    transform: translate(20px,20px);
-    transition: all 0.2s ease-out;
-}
-
-.menu ul ul:after {
-    left: -6px;
-    top: 10%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(255, 255, 255, 0);
-    border-right-color: #fff;
-    border-width: 6px;
-    margin-top: -6px;
-}
-
-.menu li>ul ul:hover {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(0,0);
-}
-
-.responsive-menu {
-    display: none;
-    width: 100%;
-    padding: 20px 15px;
-    background: #374147;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.responsive-menu:hover {
-    background: #374147;
-    color: #fff;
-    text-decoration: none;
-}
-
-a.homer {
-    background: rgb(194, 138, 171);
-} */
-
-
-/* -------------------------------- */
-
-
-
-
-
-        /* .bg-dark {
-            background:transparent !important;
-            transition:0.75s ease;
-        }
-        .bg-dark.scrolled {
-            background:#000 !important;
-        } */
-
-
-/* -------------------------------- */
-/* -------------------------------- */
-
 
 
 
@@ -3479,7 +3216,8 @@ a.homer {
 
 .navbar-color {
   /* background-color: rgb(240, 240, 240); */
-  background-color: #D7D7CA;
+  /* background-color: #D7D7CA; */
+  background-color:#536271;
   height: 65px;
   border-bottom-color: #e6e6e6;
 }
@@ -3499,7 +3237,7 @@ ul.links li {float: left;}
 
 ul.links li a {
     display: inline-block;
-    color: #474747;
+    color: #fdfdfd;
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
@@ -3509,7 +3247,8 @@ ul.links li a {
    font-weight: bold;
    font-family: 'Josefin Sans', sans-serif;
    letter-spacing: 1px;
-   background-color: #D7D7CA;
+   /* background-color: #D7D7CA; */
+   background-color: #536271;
 }
 
 ul.links li a:hover {
@@ -3741,6 +3480,7 @@ ul.links li.icon {display: none;}
 
 .ux-card {
   width: 360px;
+  height: 350px;
 }
 .flex-space-around {
   display:block;
