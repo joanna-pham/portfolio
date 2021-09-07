@@ -3309,7 +3309,7 @@ ul.links li.icon {display: none;}
 }
 
 /* media Queries */
-@media screen and (max-width:820px) {
+@media screen and (max-width:980px) {
   ul.links li:not(:first-child) {display: none;}
   ul.links li.icon {
     float: right;
@@ -3320,7 +3320,7 @@ ul.links li.icon {display: none;}
   }
 }
 /* new class responsive */
-@media screen and (max-width:820px) {
+@media screen and (max-width:980px) {
   ul.links.responsive {position: relative;}
   ul.links.responsive li.icon {
     position: absolute;
@@ -3481,6 +3481,7 @@ ul.links li.icon {display: none;}
 .ux-card {
   width: 360px;
   height: 350px;
+  margin: 30px;
 }
 .flex-space-around {
   display:block;
